@@ -1,0 +1,32 @@
+{
+    "name": "chunrongl/tqigou-service",
+    "description": "tqigou-service",
+    "type": "library",
+    "require": {
+        "php": ">=7.1.3",
+        "hprose/hprose": "v2.0.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chunrongl",
+            "email": "chunrongl12@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Chunrongl\\TqigouService\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chunrongl\\TqigouService\\TqigouServiceProvider"
+            ],
+            "aliases": {
+                "TqigouRouter": "Chunrongl\\TqigouService\\Facades\\RouteManage"
+            }
+        }
+    }
+}
